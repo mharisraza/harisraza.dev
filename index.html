@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Muhammad Haris | Java Developer</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f9f9f9;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+
+    /* Top section with name on left, resume/vision links on right */
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .top-bar h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    .top-links {
+      display: flex;
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    .top-links a {
+      text-decoration: none;
+      color: #0073e6;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    h2 {
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .experience, .skills {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      margin: 4px 0;
+    }
+
+    .contact {
+      margin-top: 2rem;
+    }
+
+    .contact a {
+      margin-right: 15px;
+      text-decoration: none;
+      color: #0073e6;
+      font-weight: bold;
+    }
+
+    /* Skills Section */
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .skills .card {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .skill-icons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skill-icons img {
+      width: 40px;
+      height: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .experience, .skills {
+        grid-template-columns: 1fr; /* stack on mobile */
+      }
+      .top-bar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .top-links {
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="top-bar">
+      <h1>Muhammad Haris</h1>
+      <div class="top-links">
+        <a href="resume.pdf" target="_blank">Download Resume</a>
+        <a href="projects.html">Projects</a>
+      </div>
+    </div>
+
+    <div class="about">
+      <p>
+        I’m a backend engineer who lives and breathes Java and Spring Boot, but what really drives me is solving the messy, real-world problems of scaling applications. Over the years, I’ve gone from writing simple REST endpoints to designing full-blown microservice ecosystems where services don’t just “talk” but collaborate gracefully. I think in terms of service boundaries, fault tolerance, observability, and clean interfaces. My toolbox is packed with Spring Boot, Spring Cloud, Docker, and the occasional late-night debugging session with distributed logs. I enjoy shaping systems that are maintainable not just today, but a year from now when five more teams are integrating into them.
+      </p>
+    </div>
+
+    <div class="experience-section">
+      <h2>Experience</h2>
+      <div class="experience" id="experience"></div>
+    </div>
+
+     <!-- Skills Section -->
+     <div class="skills-section">
+      <h2>Skills</h2>
+      <div class="skills">
+        
+        <div class="card">
+          <h3>Backend & Architecture</h3>
+          <div class="skill-icons">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"/>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot"/>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original.svg" alt="Kafka"/>
+          </div>
+          <p>Java, Spring Boot, Spring Cloud, Microservices, Apache Kafka, Camunda, AOP, OAuth2, JWT, Keycloak</p>
+        </div>
+
+        <div class="card">
+          <h3>Databases & Storage</h3>
+          <div class="skill-icons">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL"/>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"/>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB"/>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="Redis"/>
+          </div>
+          <p>PostgreSQL, MySQL, MongoDB, Redis, ETL Pipelines & Data Migration</p>
+        </div>
+
+        <div class="card">
+          <h3>DevOps & Cloud</h3>
+          <div class="skill-icons">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker"/>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes"/>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" alt="Jenkins"/>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" alt="AWS"/>
+          </div>
+          <p>Docker, Kubernetes, CI/CD (Jenkins, GitHub Actions, GitLab CI), AWS (EC2, S3, RDS, Lambda)</p>
+        </div>
+
+        <div class="card">
+          <h3>Testing & Quality</h3>
+          <div class="skill-icons">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg" alt="Selenium"/>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="JUnit"/>
+          </div>
+          <p>JUnit, Mockito, Testcontainers, Selenium, Performance Optimization, Code Refactoring</p>
+        </div>
+
+        <div class="card">
+          <h3>Monitoring & Logging</h3>
+          <div class="skill-icons">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg" alt="Prometheus"/>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg" alt="Grafana"/>
+          </div>
+          <p>Prometheus, Grafana, ELK Stack (Elasticsearch, Logstash, Kibana), Zipkin, Jaeger</p>
+        </div>
+
+        <div class="card">
+          <h3>Tools & Collaboration</h3>
+          <div class="skill-icons">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"/>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"/>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" alt="GitLab"/>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux"/>
+          </div>
+          <p>Git, GitHub/GitLab, GitFlow, Agile/Scrum, Jira, Confluence, Swagger/OpenAPI, Linux/Unix</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact">
+      <h2>Contact</h2>
+      <a href="mailto:harisraza@duck.com">Email</a>
+      <a href="https://linkedin.com/in/mharisrazaa" target="_blank">LinkedIn</a>
+      <a href="https://github.com/mharisraza" target="_blank">GitHub</a>
+    </div>
+  </div>
+
+  <script>
+    fetch("experience.json")
+      .then(res => res.json())
+      .then(data => {
+        const expContainer = document.getElementById("experience");
+
+        data.forEach(exp => {
+          const div = document.createElement("div");
+          div.className = "card";
+          div.innerHTML = `
+            <h3>${exp.role}</h3>
+            <p><strong>${exp.company}</strong> — ${exp.period}</p>
+            <p>${exp.description}</p>
+          `;
+          expContainer.appendChild(div);
+        });
+      })
+      .catch(err => {
+        console.error("Failed to load experience:", err);
+        document.getElementById("experience").innerHTML =
+          "<p>Could not load experience data.</p>";
+      });
+  </script>
+</body>
+</html>

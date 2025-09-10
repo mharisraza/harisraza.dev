@@ -1,0 +1,15 @@
+[
+    {
+      "role": "Java Developer",
+      "company": "Centegy Technologies",
+      "period": "Jan 2024 - Present",
+      "description": "At Centegy, I contributed to the development and optimization of enterprise microservices using Java and Spring Boot. My work focused on refactoring legacy code for better maintainability, implementing design patterns and AOP to improve reusability, and fine-tuning SQL queries for performance. I also enhanced the company’s internal framework to reduce duplication and improve scalability, while applying code obfuscation techniques to strengthen application security."
+    },
+    {
+      "role": "Intern - Java Developer",
+      "company": "Sudoware",
+      "period": "June 2023 - Jan 2024",
+      "description": "At Sudoware, I worked on full-stack application development with Java, Spring Boot, and React. I developed a LinkedIn data extraction tool using Selenium and Spring Boot, integrated Keycloak for secure authentication and role-based access, and automated frontend testing to improve reliability. I also contributed to a CRM web application, building backend APIs and frontend modules that enhanced user management and overall functionality."
+    }
+  ]
+  

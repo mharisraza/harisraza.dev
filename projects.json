@@ -1,0 +1,15 @@
+[
+    {
+      "name": "WebLinkedinScraper",
+      "description": "Engineered a web application for LinkedIn data extraction using Selenium and Spring Boot. Features advanced keyword-based search, login, and post retrieval with clean modular code.",
+      "link": "https://github.com/mharisraza/WebLinkedinScraper",
+      "techStack": ["Java", "Spring Boot", "Selenium", "ReactJS", "MongoDB"]
+    },
+    {
+      "name": "HyperSpaceGamePanel",
+      "description": "Built a web-based game server management panel with Thymeleaf. Supports server monitoring, start/stop/restart controls, player management, and log monitoring.",
+      "link": "https://github.com/mharisraza/HyperSpaceGamePanel",
+      "techStack": ["Java", "Spring Boot", "Thymeleaf", "JSch", "JavaScript"]
+    }
+  ]
+  
